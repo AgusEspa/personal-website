@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0F0F0F;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #737373;
+  background: #000000;
+}
+
+.app-title {
+  margin-left: 2rem;
+  background-color: #3a2642;
+}
+
+.app-title h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: monospace;
+  color: #e6b3cc;
+  margin: 0;
+}
+
+.links-menu {
+  height: 100%;
+  margin-right: 2rem;
+}
+
+.links-menu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.links-menu > li {
+  list-style: none;
+}
+
+.links-menu li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  font-family: monospace;
+}
