@@ -48,7 +48,8 @@ body {
 .links-menu li a {
   display: block;
   text-decoration: none;
+  font-size: 1.1rem;
   color: white;
-  padding: 1.1rem;
+  padding: 1.2rem;
   font-family: monospace;
 }
