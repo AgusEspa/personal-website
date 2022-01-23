@@ -23,8 +23,7 @@ body {
 
 .app-title h3 {
   font-size: 1.5rem;
-  font-weight: 300;
-  font-family: monospace;
+  font-family: 'Source Code Pro', monospace;
   color: #e6b3cc;
   margin: 0;
 }
@@ -50,7 +49,7 @@ body {
   font-size: 1.1rem;
   color: white;
   padding: 1rem;
-  font-family: monospace;
+  font-family: 'Source Code Pro', monospace;
 }
 
 
@@ -79,4 +78,8 @@ body {
     100% {
         background-color: #3a2642;
     }
+}
+
+.links {
+    background-color: #642360;
 }
