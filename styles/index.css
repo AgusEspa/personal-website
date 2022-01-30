@@ -1,0 +1,33 @@
+.about {	
+	display: inline-flex;
+	align-items: center;
+  	flex-wrap: wrap;
+}
+
+.photo-box {
+	float: left;
+	margin-left: 6rem;
+	margin-top: 1rem;
+}
+
+.photo-box img {
+	width: 8rem;
+}
+
+.text-box {
+	margin-top: 1rem;
+	margin-left: 4rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+	margin-top: 1rem;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.links-box {
+	margin-top: 1rem;
+	margin-left: 4rem;
+}

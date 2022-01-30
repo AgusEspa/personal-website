@@ -9,12 +9,14 @@ body {
     color: white;
 }
 
+
 .navbar {
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
+    margin-bottom: 3rem;
 }
 
 .app-title {
@@ -47,14 +49,14 @@ body {
 .links-menu a {
     display: block;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: white;
     padding: 1rem;
     font-family: 'Source Code Pro', monospace;
 }
 
 .links-menu a:hover {
-    text-decoration: underline;
+    text-decoration: underline 3px;
     text-decoration-color: #642360;
 }
 
@@ -70,7 +72,6 @@ body {
     padding: 1rem;
     font-family: 'Source Code Pro', monospace;
 }
-
 
 /* blinking cursor */
 .blinking-cursor {
@@ -103,20 +104,6 @@ body {
     background-color: #642360;
 }
 
-
-.main {
-    position: absolute;
-    left: 25%;
-    margin-top: 2rem;
-}
-
-.main p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: white;
-    font-family: 'Source Code Pro', monospace;
-
-}
 
 footer {
     position: fixed;
