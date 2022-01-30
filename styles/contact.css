@@ -1,26 +1,10 @@
-.about {	
-	display: inline-flex;
-  	flex-wrap: wrap;
-	padding-bottom: 4rem;
-}
-
-.photo-box {
-	float: left;
-	margin-left: 12rem;
-	margin-top: 2rem;
-}
-
-.photo-box img {
-	width: 8rem;
-}
-
-.text-box {
+.contact {
 	margin-top: 1rem;
-	margin-left: 4rem;
+	margin-left: 25.7rem;
 	max-width: 34rem;
 }
 
-.text-box p {
+.contact p {
     font-size: 1.1rem;
     line-height: 1.8rem;
 	margin-top: 1rem;
