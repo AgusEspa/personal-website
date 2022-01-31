@@ -1,7 +1,6 @@
-.about {	
+.about-container {	
 	display: inline-flex;
   	flex-wrap: wrap;
-	padding-bottom: 4rem;
 }
 
 .photo-box {

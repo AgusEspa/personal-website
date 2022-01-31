@@ -60,9 +60,10 @@ body {
     text-decoration-color: #642360;
 }
 
-#clic {
-    text-decoration: underline;
-    text-decoration-color: #a6a5a7;
+.links-menu a:active {
+    color: #e6b3cc;
+    text-decoration: underline 1px;
+    text-decoration-color: #642360;
 }
 
 .links-menu span {
