@@ -2,14 +2,16 @@ body {
     margin: 0;
     padding: 0;
     background-color: #141414;
-    color: white;
     box-sizing: border-box;
 }
 
 
 .navbar {
     display: flex;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
@@ -22,7 +24,7 @@ body {
 }
 
 .app-title h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Source Code Pro', monospace;
     color: #e6b3cc;
     margin: 0;
@@ -46,7 +48,7 @@ body {
 .links-menu a {
     display: block;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
     padding: 1rem;
     font-family: 'Source Code Pro', monospace;
@@ -107,6 +109,8 @@ footer {
     min-height: 100%;
     left: 0;
     right: 0;
+    padding: 0.5rem 0 0 0;
+    margin: 0;
 }
 .footer-box {
     border-top: 1px solid #262626;
@@ -124,25 +128,27 @@ footer {
 
 /* About Section */
 .about-container {  
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: grid;
+    columns: 2;
+    column-gap: 2rem;
+    padding: 2rem;
+    margin: 6rem 0 0 0;
 }
 .photo-box {
-    float: left;
-    margin-left: 12rem;
-    margin-top: 2rem;
+    grid-column: 1/2;
 }
 .photo-box img {
     width: 8rem;
+    float: right;
 }
 .text-box {
-    margin-top: 1rem;
-    margin-left: 4rem;
+    grid-column: 2/2;
+    margin: 0;
     max-width: 34rem;
 }
 .text-box p {
-    font-size: 1.1rem;
-    line-height: 1.8rem;
+    font-size: 1.05rem;
+    line-height: 1.6rem;
     margin-top: 1rem;
     margin-bottom: 0;
     color: white;
@@ -168,36 +174,102 @@ footer {
     cursor: pointer;
     padding:  0;
 }
-
+@media screen and (max-width: 750px) {
+    .about-container {  
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        margin: 4rem 0 0 0;
+    }
+    .photo-box {
+        grid-column: 0;
+        margin: 1rem 0 0 0;
+    }
+}
 
 /* Resume Section */
 .resume-container {
-    background-color: #d9d9d9;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 4rem 2rem 4rem 2rem;
 }
-.resume-container p {
-    color: black;
+.resume-box {
+    background-color: #f7f7f7;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+    border-top: 0;
+    border-radius: 0.3rem;
+    padding: 3rem;
+}
+.resume-box h2 {
+    color: #0e0e0e;
+    text-decoration-line: underline;
+    text-decoration-color: #3a3a3a;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin: 0 0 0.5rem 0;
+    font-family: 'Source Code Pro', monospace;
+}
+#subtitle {
+    margin-top: 2rem;
+}
+.resume-box h3 {
+    color: #0e0e0e;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin: 0 0 0.5rem 0;
+    font-family: 'Source Code Pro', monospace;
+}
+.resume-box p {
+    font-size: 1rem;
+    color: #0e0e0e;
+    line-height: 1.5rem;
+    font-family: 'Source Code Pro', monospace;
+    padding: 0;
+    margin: 0;
+}
+.resume-box ul {
+    padding: 0 0 0 1rem;
+    margin: 0;
+}
+.resume-box li {
+    padding: 0;
+    margin: 0 0 0.5rem 0;
 }
 
 
 /* Projects Section */
 .projects-container {
     background-color: #3a2642;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 4rem 2rem 4rem 2rem;
 }
 
 
 /* Contact Section */
 .contact-container {
     display: flex;
-    position: relative;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
+    padding: 4rem 2rem 4rem 2rem;
+    margin: 0;
 }
 .contact-box {
-    margin-top: 1rem;
-    margin-left: 25.7rem;
-    max-width: 34rem;
-    padding-bottom: 4rem;
+    display: block;
+    background-color: #242424;
+    border: 6px solid #2e2e2e;
+    border-radius: 0.3rem;
+    padding: 1rem 4rem 1.6rem 4rem;
 }
 .contact-box p {
     font-size: 1.1rem;
@@ -209,5 +281,5 @@ footer {
 }
 .links-box img {
     width: 1.8rem;
-    margin-top: 0.3rem;
+    margin-top: 0.6rem;
 }
