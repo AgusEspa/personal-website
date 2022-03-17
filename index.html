@@ -23,7 +23,7 @@
 				} else {
 				    period.style.display = "none";
 				    btnText.innerHTML = "Read less";
-				    moreText.style.display = "inline";
+				    moreText.style.display = "block";
 				}
 			}
 		</script>
@@ -62,11 +62,12 @@
 				<div class="text-box"> 
 
 					<p>Hello!</p>
-					<p>My name is Agustin Espana. </br> I’m a Full Stack Developer counting 10+ years of experience between many digital fields, from traditional web development, rich ebook design, and administration of bespoke IT systems<span id="period">.</span></p>
-					<p id="more">I'm proficient at handling all stages of software development life cycle. </br> My main technical skills are focused towards building secure and robust applications with Spring, and nimble web GUI with React. I’m also concerned with the application of Machine Learning, specially NLP modeling.</p>
-					<p id="more">My personal approach to software development is having a thorough understanding of the technologies involved and coding meticulously to achieve robust, secure and performant systems.</p>
-					<p id="more">As a worker, I enjoy team effort for its extensive as well as deep reach, and I'm able to fulfill individual challenges responsibly and thoroughly. </br>I'm strongly committed to doing everything to the best of my abilities.</p>
-
+					<p>My name is Agustin Espana. </br> I’m a Full Stack Developer counting 10+ years of experience between many digital fields, from traditional web development, rich ebook design, and administration of bespoke IT systems.<span id="period">..</span></p>
+					<div id="more">
+						<p>I'm proficient at handling all stages of software development life cycle. </br> My main technical skills are focused towards building secure and robust applications with Spring, and nimble web GUI with React. I’m also concerned with the application of Machine Learning, specially NLP modeling.</p>
+						<p>My personal approach to software development is having a thorough understanding of the technologies involved and coding meticulously to achieve robust, secure and performant systems.</p>
+						<p>As a worker, I enjoy team effort for its extensive as well as deep reach, and I'm able to fulfill individual challenges responsibly and thoroughly. </br>I'm strongly committed to doing everything to the best of my abilities.</p>
+					</div>
 					<button onclick="toggleReadMore()" id="readMoreBtn">Read more</button>
 
 				</div>

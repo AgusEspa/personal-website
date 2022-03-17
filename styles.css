@@ -157,14 +157,16 @@ footer {
 }
 #readMoreBtn {
     background-color: transparent;
+    display: block;
     border: none;
     font-size: 1rem;
     line-height: 1.8rem;
-    margin-top: 1rem;
+    margin-top: 0.3rem;
     margin-bottom: 0;
     color: gray;
     font-family: 'Source Code Pro', monospace;
     cursor: pointer;
+    padding:  0;
 }
 
 
