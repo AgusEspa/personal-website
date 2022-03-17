@@ -152,6 +152,20 @@ footer {
     width: 1.8rem;
     margin-top: 0.3rem;
 }
+#more {
+  display: none;
+}
+#readMoreBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: gray;
+    font-family: 'Source Code Pro', monospace;
+    cursor: pointer;
+}
 
 
 /* Resume Section */

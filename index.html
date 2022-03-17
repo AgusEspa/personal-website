@@ -9,6 +9,25 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+	
+		<script>
+			function toggleReadMore() {
+				const period = document.getElementById("period");
+				const moreText = document.getElementById("more");
+				const btnText = document.getElementById("readMoreBtn");
+
+				if (period.style.display === "none") {
+				    period.style.display = "inline";
+				    btnText.innerHTML = "Read more";
+				    moreText.style.display = "none";
+				} else {
+				    period.style.display = "none";
+				    btnText.innerHTML = "Read less";
+				    moreText.style.display = "inline";
+				}
+			}
+		</script>
+
 	</head>
 
 	<body>
@@ -41,12 +60,14 @@
 				</div>
 
 				<div class="text-box"> 
-					<p>hello!</p>
-					<p>my name is agustin espana. </br> i'm a full stack software developer specialized in Java Spring and React.</p>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec malesuada quam. Cras aliquet a lectus non finibus. Donec vel enim at nisl ullamcorper ultrices.</p>
-					<p>Suspendisse lacinia augue sit amet diam efficitur, eu posuere ipsum interdum. Etiam mattis tempus sapien id eleifend. Ut mollis maximus lobortis.</p>
-					<p>Cras blandit et leo vel imperdiet. Integer viverra nulla a leo viverra, et feugiat elit tempus.</p>
+					<p>Hello!</p>
+					<p>My name is Agustin Espana. </br> I’m a Full Stack Developer counting 10+ years of experience between many digital fields, from traditional web development, rich ebook design, and administration of bespoke IT systems<span id="period">.</span></p>
+					<p id="more">I'm proficient at handling all stages of software development life cycle. </br> My main technical skills are focused towards building secure and robust applications with Spring, and nimble web GUI with React. I’m also concerned with the application of Machine Learning, specially NLP modeling.</p>
+					<p id="more">My personal approach to software development is having a thorough understanding of the technologies involved and coding meticulously to achieve robust, secure and performant systems.</p>
+					<p id="more">As a worker, I enjoy team effort for its extensive as well as deep reach, and I'm able to fulfill individual challenges responsibly and thoroughly. </br>I'm strongly committed to doing everything to the best of my abilities.</p>
+
+					<button onclick="toggleReadMore()" id="readMoreBtn">Read more</button>
 
 				</div>
 
@@ -55,9 +76,16 @@
 			<!-- RESUME Section -->
 			<section class="resume-container" id="resume">
 				<div class="text-box"> 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec malesuada quam. Cras aliquet a lectus non finibus. Donec vel enim at nisl ullamcorper ultrices.</p>
-					<p>Suspendisse lacinia augue sit amet diam efficitur, eu posuere ipsum interdum. Etiam mattis tempus sapien id eleifend. Ut mollis maximus lobortis.</p>
-					<p>Cras blandit et leo vel imperdiet. Integer viverra nulla a leo viverra, et feugiat elit tempus.</p>
+					<h2>Core Skills</h2>
+					<ul>
+						<li>Java</li>
+						<li>Spring (Core, MVC, Data, Security)</li>
+						<li>React</li>
+						<li>HTML & CSS</li>
+						<li>SQL, PostrgreSQL</li>
+						<li>Google Cloud Platform</li>
+						<li>Test Driven Development</li>
+					</ul>
 
 				</div>
 			</section>
@@ -65,9 +93,7 @@
 			<!-- PROJECTS Section -->
 			<section class="projects-container" id="projects">
 				<div class="text-box"> 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec malesuada quam. Cras aliquet a lectus non finibus. Donec vel enim at nisl ullamcorper ultrices.</p>
-					<p>Suspendisse lacinia augue sit amet diam efficitur, eu posuere ipsum interdum. Etiam mattis tempus sapien id eleifend. Ut mollis maximus lobortis.</p>
-					<p>Cras blandit et leo vel imperdiet. Integer viverra nulla a leo viverra, et feugiat elit tempus.</p>
+					<p>Coming soon...</p>
 
 				</div>
 			</section>
