@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    padding: 0;
     background-color: #141414;
 }
 
@@ -276,7 +275,7 @@ footer {
     display: block;
     background-color: #242424;
     box-shadow: 0.4rem 0.4rem #535353;
-    border-radius: 0.3rem;
+    border-radius: 0.15rem;
     padding: 1rem 4rem 1.6rem 4rem;
 }
 .contact-box p {
