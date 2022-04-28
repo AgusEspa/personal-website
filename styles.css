@@ -254,6 +254,9 @@ footer {
     margin: 0;
     padding: 4rem 2rem 4rem 2rem;
 }
+.project-box img {
+    width: 13rem;
+}
 
 
 /* Contact Section */
