@@ -275,7 +275,7 @@ footer {
 .contact-box {
     display: block;
     background-color: #242424;
-    border: 2px dotted #747474;
+    box-shadow: 0.4rem 0.4rem #535353;
     border-radius: 0.3rem;
     padding: 1rem 4rem 1.6rem 4rem;
 }
