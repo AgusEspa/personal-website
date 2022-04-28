@@ -28,12 +28,6 @@ body {
     margin: 0;
 }
 
-@media screen and (max-width: 750px) {
-    .links-menu {
-        display: none;
-    }
-}
-
 .links-menu {
     height: 100%;
     margin-right: 2rem;
@@ -75,6 +69,12 @@ body {
     color: white;
     padding: 1rem;
     font-family: 'Source Code Pro', monospace;
+}
+
+@media screen and (max-width: 750px) {
+    .links-menu {
+        display: none;
+    }
 }
 
 /* blinking cursor */
@@ -131,20 +131,6 @@ footer {
 
 
 /* About Section */
-@media screen and (max-width: 750px) {
-    .about-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 2rem;
-        margin: 4rem 0 0 0;
-    }
-
-    .photo-box {
-        grid-column: 0;
-        margin: 1rem 0 0 0;
-    }
-}
 .about-container {  
     display: grid;
     columns: 2;
@@ -191,6 +177,20 @@ footer {
     font-family: 'Source Code Pro', monospace;
     cursor: pointer;
     padding:  0;
+}
+@media screen and (max-width: 750px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        margin: 4rem 0 0 0;
+    }
+
+    .photo-box {
+        grid-column: 0;
+        margin: 1rem 0 0 0;
+    }
 }
 
 /* Resume Section */
@@ -260,7 +260,12 @@ footer {
     padding: 4rem 2rem 4rem 2rem;
 }
 .project-box img {
-    width: 13rem;
+    width: 12rem;
+}
+@media screen and (max-width: 750px) {
+    .project-box img {
+        width: 10rem;
+    }
 }
 
 
