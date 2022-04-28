@@ -18,7 +18,7 @@ body {
 }
 
 .app-title {
-    margin-left: 2rem;
+    margin: 1rem 1rem 1rem 3rem;
     background-color: #3a2642;
 }
 
@@ -32,6 +32,12 @@ body {
 .links-menu {
     height: 100%;
     margin-right: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+    .links-menu {
+        display: none;
+    }
 }
 
 .links-menu ul {
