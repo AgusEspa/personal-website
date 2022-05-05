@@ -221,7 +221,7 @@ footer {
     font-weight: 600;
     font-size: 1.3rem;
     line-height: 1.8rem;
-    margin: 0 0 0.5rem 0;
+    margin: 1rem 0 0.5rem 0;
     font-family: 'Source Code Pro', monospace;
 }
 #subtitle {
@@ -229,10 +229,10 @@ footer {
 }
 .resume-box h3 {
     color: #0e0e0e;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 1.1rem;
     line-height: 1.8rem;
-    margin: 0 0 0.5rem 0;
+    margin: 1rem 0 0.2rem 0;
     font-family: 'Source Code Pro', monospace;
 }
 .resume-box p {
@@ -249,7 +249,7 @@ footer {
 }
 .resume-box li {
     padding: 0;
-    margin: 0 0 0.5rem 0;
+    margin: 0;
 }
 
 
@@ -298,6 +298,7 @@ footer {
 .links-box img {
     width: 1.8rem;
     margin-top: 0.6rem;
+    margin-right: 0.5rem;
 }
 @media screen and (max-width: 750px) {
     .contact-box {
