@@ -212,7 +212,7 @@ footer {
     border-bottom: 2px solid #dddddd;
     border-top: 0;
     border-radius: 0.3rem;
-    padding: 3rem;
+    padding: 2.5rem 3rem 3rem 3rem;
 }
 .resume-box h2 {
     color: #0e0e0e;
@@ -250,6 +250,21 @@ footer {
 .resume-box li {
     padding: 0;
     margin: 0;
+}
+@media screen and (max-width: 750px) {
+    .resume-container {
+        padding: 3rem 0.5rem 1rem 0.5rem;
+    }
+    
+    .resume-box {
+        background-color: #f7f7f7;
+        border-left: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+        border-bottom: 2px solid #dddddd;
+        border-top: 0;
+        border-radius: 0.3rem;
+        padding: 1rem;
+    }
 }
 
 
