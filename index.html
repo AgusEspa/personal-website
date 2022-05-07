@@ -12,26 +12,6 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
 
-		<!-- Read More toggle -->
-		<script>
-			function toggleReadMore() {
-				const period = document.getElementById("period");
-				const moreText = document.getElementById("more");
-				const btnText = document.getElementById("readMoreBtn");
-
-				if (period.style.display === "none") {
-				    period.style.display = "inline";
-				    btnText.innerHTML = "Read more";
-				    moreText.style.display = "none";
-					window.scroll(0, 0);
-				} else {
-				    period.style.display = "none";
-				    btnText.innerHTML = "Read less";
-				    moreText.style.display = "block";
-				}
-			}
-		</script>
-
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZVFMZB7Z8"></script>
 		<script>
@@ -41,7 +21,8 @@
   			gtag('config', 'G-WZVFMZB7Z8');
 		</script>
 
-		<script src="script.js" defer></script>
+		<script src="burgerMenu.js" defer></script>
+		<script src="readMore.js" defer></script>
 
 	</head>
 
