@@ -3,4 +3,5 @@ const navbarLinks = document.getElementsByClassName("links-menu")[0];
 
 hamburgerButton.addEventListener("click", () => {
 	navbarLinks.classList.toggle("active");
+	hamburgerButton.classList.toggle("active");
 });
