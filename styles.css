@@ -1,12 +1,18 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: #141414;
 }
 
-
 .navbar {
     display: flex;
     position: fixed;
+    overflow: hidden;
     width: 100%;
     top: 0;
     left: 0;
@@ -14,10 +20,12 @@ body {
     align-items: center;
     background-color: #000000;
     margin-bottom: 3rem;
+    margin: 0;
+    padding: 1rem;
 }
 
 .app-title {
-    margin: 1rem 1rem 1rem 3rem;
+    margin: 0rem 0rem 0rem 3rem;
     background-color: #3a2642;
 }
 
@@ -30,17 +38,17 @@ body {
 
 .links-menu {
     height: 100%;
-    margin-right: 2rem;
 }
 
 .links-menu ul {
     display: flex;
-    margin: 0;
+    margin: 0rem 4rem 0rem 0rem;
     padding: 0;
 }
 
 .links-menu li {
     list-style: none;
+    margin-left: 1rem;
 }
 
 .links-menu a {
@@ -48,7 +56,6 @@ body {
     text-decoration: none;
     font-size: 1.1rem;
     color: white;
-    padding: 1rem;
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -71,12 +78,50 @@ body {
     font-family: 'Source Code Pro', monospace;
 }
 
+.hamburger {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    margin: 0rem 1rem 0rem 0rem;
+    padding: 0;
+}
+.bar {
+    display: block;
+    width: 1.2rem;
+    height: 0.1rem;
+    margin: 0.3rem;
+    background-color: #ffffff;
+    border-radius: 1px;
+}
+
 @media screen and (max-width: 750px) {
-    .links-menu {
-        display: none;
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
     }
     .app-title {
-        margin: 1rem 1rem 1rem 2rem;
+        margin-left: 1rem;
+    }
+    .links-menu {
+        display: none;
+        width: 100%;
+    }
+    .links-menu ul {
+        width: 100%;
+        flex-direction: column;
+        padding: 1.3rem;
+        margin: 0;
+    }
+    .links-menu li {
+        text-align: right;
+        margin-bottom: 1rem;
+    }
+    .links-menu.active {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
     }
 }
 
@@ -244,8 +289,15 @@ footer {
     margin: 0;
 }
 .resume-box ul {
-    padding: 0 0 0 1rem;
+    list-style: circle;
+    padding: 0 0 0 1.2rem;
     margin: 0;
+}
+.resume-box ul.skills {
+    list-style: square;
+    padding: 0 0 0 1.2rem;
+    margin: 0;
+    font-size: 1.1rem;
 }
 .resume-box li {
     padding: 0;
@@ -316,7 +368,10 @@ footer {
     margin-right: 0.5rem;
 }
 @media screen and (max-width: 750px) {
+    .contact-container {
+        padding: 3rem 0.5rem 3rem 0.5rem;
+    }
     .contact-box {
-        padding: 1rem 2rem 1.6rem 3rem;
+        padding: 1.2rem 2.5rem 1.5rem 2.5rem;
     }
 }

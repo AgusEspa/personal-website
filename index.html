@@ -11,7 +11,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
-	
+
+		<!-- Read More toggle -->
 		<script>
 			function toggleReadMore() {
 				const period = document.getElementById("period");
@@ -40,6 +41,8 @@
   			gtag('config', 'G-WZVFMZB7Z8');
 		</script>
 
+		<script src="script.js" defer></script>
+
 	</head>
 
 	<body>
@@ -48,7 +51,6 @@
 
       		<div class="app-title">
       			<h3>agustin_espana >&nbsp;<span class="blinking-cursor">&nbsp;</span></h3>
-      			
       		</div>
 		
 			<div class="links-menu">
@@ -59,6 +61,13 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
+
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+
 
 		</nav>
 
@@ -102,7 +111,7 @@
 			<section class="resume-container" id="resume">
 				<div class="resume-box"> 
 					<h2>Core Skills</h2>
-					<ul>
+					<ul class="skills">
 						<li><p>Web APIs development with <strong>Java</strong> and <strong>Spring</strong></p></li>
 						<li><p>Web design with <strong>React, HTML & CSS</strong></p></li>
 						<li><p>Data persistence with <strong>SQL</strong></p></li>
