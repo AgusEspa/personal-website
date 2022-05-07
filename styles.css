@@ -60,14 +60,8 @@ body {
 }
 
 .links-menu a:hover {
-    text-decoration: underline 3px;
-    text-decoration-color: #642360;
-}
-
-.links-menu a:active {
-    color: #e6b3cc;
-    text-decoration: underline 1px;
-    text-decoration-color: #642360;
+    text-decoration: 1px solid underline;
+    text-decoration-color: #e6b3cc;
 }
 
 .links-menu span {
