@@ -5,3 +5,12 @@ hamburgerButton.addEventListener("click", () => {
 	navbarLinks.classList.toggle("active");
 	hamburgerButton.classList.toggle("active");
 });
+
+const navbarLink = Array.from(document.getElementsByClassName("link"));
+
+navbarLink.forEach((anchor) => {
+	anchor.addEventListener("click", () => {
+		navbarLinks.classList.toggle("active");
+		hamburgerButton.classList.toggle("active");
+	});
+});
