@@ -90,7 +90,7 @@ body {
     transition: all 0.2s ease-out;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -231,7 +231,7 @@ footer {
     cursor: pointer;
     padding:  0;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
     .about-container {
         display: flex;
         flex-direction: column;
@@ -308,7 +308,7 @@ footer {
     padding: 0;
     margin: 0;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
     .resume-container {
         padding: 3rem 0.5rem 3rem 0.5rem;
     }
@@ -337,7 +337,7 @@ footer {
 .project-box img {
     width: 12rem;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
     .project-box img {
         width: 10rem;
     }
@@ -372,7 +372,7 @@ footer {
     margin-top: 0.6rem;
     margin-right: 0.5rem;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 780px) {
     .contact-container {
         padding: 3rem 0.5rem 3rem 0.5rem;
     }
