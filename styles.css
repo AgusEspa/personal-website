@@ -1,382 +1,383 @@
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background-color: #141414;
+  margin: 0;
+  background-color: #141414;
 }
 
 .navbar {
-    display: flex;
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
-    top: 0;
-    left: 0;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.9);
-    margin-bottom: 3rem;
-    margin: 0;
-    padding: 1rem;
+  display: flex;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 3rem;
+  margin: 0;
+  padding: 1rem;
 }
 
 .app-title {
-    margin: 0rem 0rem 0rem 3rem;
-    background-color: #3a2642;
+  margin: 0rem 0rem 0rem 3rem;
+  background-color: #3a2642;
 }
 
 .app-title h3 {
-    font-size: 1.3rem;
-    font-family: 'Source Code Pro', monospace;
-    color: #e6b3cc;
-    margin: 0;
+  font-size: 1.3rem;
+  font-family: "Source Code Pro", monospace;
+  color: #e6b3cc;
+  margin: 0;
 }
 
 .links-menu {
-    height: 100%;
+  height: 100%;
 }
 
 .links-menu ul {
-    display: flex;
-    margin: 0rem 4rem 0rem 0rem;
-    padding: 0;
+  display: flex;
+  margin: 0rem 4rem 0rem 0rem;
+  padding: 0;
 }
 
 .links-menu li {
-    list-style: none;
-    margin-left: 1rem;
+  list-style: none;
+  margin-left: 1rem;
 }
 
 .links-menu a {
-    display: block;
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: white;
-    font-family: 'Source Code Pro', monospace;
+  display: block;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: white;
+  font-family: "Source Code Pro", monospace;
 }
 
 .links-menu a:hover {
-    text-decoration: 1px solid underline;
-    text-decoration-color: #e6b3cc;
+  text-decoration: 1px solid underline;
+  text-decoration-color: #e6b3cc;
 }
 
 .links-menu span {
-    display: block;
-    font-size: 1.1rem;
-    color: white;
-    padding: 1rem;
-    font-family: 'Source Code Pro', monospace;
+  display: block;
+  font-size: 1.1rem;
+  color: white;
+  padding: 1rem;
+  font-family: "Source Code Pro", monospace;
 }
 
 .hamburger {
-    display: none;
-    position: absolute;
-    right: 1rem;
-    top: 1.2rem;
-    margin: 0rem 1rem 0rem 0rem;
-    padding: 0;
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1.2rem;
+  margin: 0rem 1rem 0rem 0rem;
+  padding: 0;
 }
 .bar {
-    display: block;
-    width: 1.2rem;
-    height: 1px;
-    margin: 0.3rem;
-    background-color: #ffffff;
-    border-radius: 1px;
-    transition: all 0.2s ease-out;
+  display: block;
+  width: 1.2rem;
+  height: 1px;
+  margin: 0.3rem;
+  background-color: #ffffff;
+  border-radius: 1px;
+  transition: all 0.2s ease-out;
 }
 
 @media screen and (max-width: 780px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .app-title {
-        margin-left: 1rem;
-    }
-    .links-menu {
-        display: none;
-        width: 100%;
-    }
-    .links-menu ul {
-        width: 100%;
-        flex-direction: column;
-        padding: 1rem 1.3rem 0 0;
-        margin: 0;
-    }
-    .links-menu li {
-        text-align: right;
-        margin-top: 1rem;
-    }
-    .links-menu.active {
-        display: flex;
-    }
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-        transform: rotate(45deg) translate(4px, 4px);
-    }
-    .hamburger.active .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(4px, -4px);
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .app-title {
+    margin-left: 1rem;
+  }
+  .links-menu {
+    display: none;
+    width: 100%;
+  }
+  .links-menu ul {
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem 1.3rem 0 0;
+    margin: 0;
+  }
+  .links-menu li {
+    text-align: right;
+    margin-top: 1rem;
+  }
+  .links-menu.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 4px);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+  }
 }
 
 /* blinking cursor */
 .blinking-cursor {
-    -webkit-animation: blinking 3s infinite;
-    animation: blinking 3s infinite;
+  -webkit-animation: blinking 3s infinite;
+  animation: blinking 3s infinite;
 }
 
 @keyframes blinking {
-    0% {
-        background-color: #3a2642;
-    }
-    29% {
-        background-color: #3a2642;
-    }
-    30% {
-        background-color: #b18194;
-    }
-    69% {
-        background-color: #b18194;
-    }
-    70% {
-        background-color: #3a2642;
-    }
-    100% {
-        background-color: #3a2642;
-    }
+  0% {
+    background-color: #3a2642;
+  }
+  29% {
+    background-color: #3a2642;
+  }
+  30% {
+    background-color: #b18194;
+  }
+  69% {
+    background-color: #b18194;
+  }
+  70% {
+    background-color: #3a2642;
+  }
+  100% {
+    background-color: #3a2642;
+  }
 }
 
 .links {
-    background-color: #642360;
+  background-color: #642360;
 }
-
 
 footer {
-    min-height: 100%;
-    left: 0;
-    right: 0;
-    padding: 0.5rem 0 0 0;
-    margin: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  padding: 0.5rem 0 0 0;
+  margin: 0;
 }
 .footer-box {
-    border-top: 1px solid #262626;
-    width: 100%;
-    height: 2rem;
-    line-height: 0.3rem;
-    background-color: #000000;
-    color: #8b8b8b;
-    text-align: center;
-    font-size: 0.7rem;
-    padding: 0;
-    font-family: 'Source Code Pro', monospace;
+  border-top: 1px solid #262626;
+  width: 100%;
+  height: 2rem;
+  line-height: 0.3rem;
+  background-color: #000000;
+  color: #8b8b8b;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 0;
+  font-family: "Source Code Pro", monospace;
 }
-
 
 /* About Section */
-.about-container {  
-    display: grid;
-    columns: 2;
-    column-gap: 2rem;
-    padding: 2rem;
-    margin: 6rem 0 0 0;
+.about-container {
+  background-image: url("./resources/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+  display: grid;
+  columns: 2;
+  column-gap: 2rem;
+  padding: 2rem;
+  margin: 6rem 0 0 0;
 }
 .photo-box {
-    grid-column: 1/2;
+  grid-column: 1/2;
 }
 .photo-box img {
-    width: 8rem;
-    float: right;
+  width: 8rem;
+  float: right;
 }
 .text-box {
-    grid-column: 2/2;
-    margin: 0;
-    max-width: 34rem;
+  grid-column: 2/2;
+  margin: 0;
+  max-width: 34rem;
 }
 .text-box p {
-    font-size: 1.05rem;
-    line-height: 1.6rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    color: white;
-    font-family: 'Source Code Pro', monospace;
+  font-size: 1.05rem;
+  line-height: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  color: white;
+  font-family: "Source Code Pro", monospace;
 }
 .links-box img {
-    width: 1.8rem;
-    margin-top: 0.3rem;
+  width: 1.8rem;
+  margin-top: 0.3rem;
 }
 #more {
   display: none;
 }
 #readMoreBtn {
-    background-color: transparent;
-    display: block;
-    border: none;
-    font-size: 1rem;
-    line-height: 1.8rem;
-    margin-top: 0.3rem;
-    margin-bottom: 0;
-    color: gray;
-    font-family: 'Source Code Pro', monospace;
-    cursor: pointer;
-    padding:  0;
+  background-color: transparent;
+  display: block;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+  color: gray;
+  font-family: "Source Code Pro", monospace;
+  cursor: pointer;
+  padding: 0;
 }
 @media screen and (max-width: 780px) {
-    .about-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 2rem;
-        margin: 4rem 0 0 0;
-    }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    margin: 4rem 0 0 0;
+  }
 
-    .photo-box {
-        grid-column: 0;
-        margin: 1rem 0 0 0;
-    }
+  .photo-box {
+    grid-column: 0;
+    margin: 1rem 0 0 0;
+  }
 }
 
 /* Resume Section */
 .resume-container {
-    background-color: #ececec;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 4rem 2rem 4rem 2rem;
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 4rem 2rem 4rem 2rem;
 }
 .resume-box {
+  background-color: #f7f7f7;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+  border-top: 0;
+  border-radius: 0.3rem;
+  padding: 2.5rem 3rem 3rem 3rem;
+}
+.resume-box h2 {
+  color: #0e0e0e;
+  text-decoration-line: underline;
+  text-decoration-color: #3a3a3a;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Source Code Pro", monospace;
+}
+#subtitle {
+  margin-top: 2rem;
+}
+.resume-box h3 {
+  color: #0e0e0e;
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin: 1rem 0 0.2rem 0;
+  font-family: "Source Code Pro", monospace;
+}
+.resume-box p {
+  font-size: 1rem;
+  color: #0e0e0e;
+  line-height: 1.5rem;
+  font-family: "Source Code Pro", monospace;
+  padding: 0;
+  margin: 0;
+}
+.resume-box ul {
+  list-style: circle;
+  padding: 0 0 0 1.2rem;
+  margin: 0;
+}
+.resume-box ul.skills {
+  list-style: square;
+  padding: 0 0 0 1.2rem;
+  margin: 0;
+  font-size: 1.1rem;
+}
+.resume-box li {
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 780px) {
+  .resume-container {
+    padding: 3rem 0.5rem 3rem 0.5rem;
+  }
+
+  .resume-box {
     background-color: #f7f7f7;
     border-left: 1px solid #dddddd;
     border-right: 1px solid #dddddd;
     border-bottom: 2px solid #dddddd;
     border-top: 0;
     border-radius: 0.3rem;
-    padding: 2.5rem 3rem 3rem 3rem;
+    padding: 1rem 1rem 2rem 1rem;
+  }
 }
-.resume-box h2 {
-    color: #0e0e0e;
-    text-decoration-line: underline;
-    text-decoration-color: #3a3a3a;
-    font-weight: 600;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-    margin: 1rem 0 0.5rem 0;
-    font-family: 'Source Code Pro', monospace;
-}
-#subtitle {
-    margin-top: 2rem;
-}
-.resume-box h3 {
-    color: #0e0e0e;
-    font-weight: 800;
-    font-size: 1.1rem;
-    line-height: 1.8rem;
-    margin: 1rem 0 0.2rem 0;
-    font-family: 'Source Code Pro', monospace;
-}
-.resume-box p {
-    font-size: 1rem;
-    color: #0e0e0e;
-    line-height: 1.5rem;
-    font-family: 'Source Code Pro', monospace;
-    padding: 0;
-    margin: 0;
-}
-.resume-box ul {
-    list-style: circle;
-    padding: 0 0 0 1.2rem;
-    margin: 0;
-}
-.resume-box ul.skills {
-    list-style: square;
-    padding: 0 0 0 1.2rem;
-    margin: 0;
-    font-size: 1.1rem;
-}
-.resume-box li {
-    padding: 0;
-    margin: 0;
-}
-@media screen and (max-width: 780px) {
-    .resume-container {
-        padding: 3rem 0.5rem 3rem 0.5rem;
-    }
-    
-    .resume-box {
-        background-color: #f7f7f7;
-        border-left: 1px solid #dddddd;
-        border-right: 1px solid #dddddd;
-        border-bottom: 2px solid #dddddd;
-        border-top: 0;
-        border-radius: 0.3rem;
-        padding: 1rem 1rem 2rem 1rem;
-    }
-}
-
 
 /* Projects Section */
 .projects-container {
-    background-color: #3a2642;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 4rem 2rem 4rem 2rem;
+  background-color: #3a2642;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 4rem 2rem 4rem 2rem;
 }
 .project-box img {
-    width: 12rem;
+  width: 12rem;
 }
 @media screen and (max-width: 780px) {
-    .project-box img {
-        width: 10rem;
-    }
+  .project-box img {
+    width: 10rem;
+  }
 }
-
 
 /* Contact Section */
 .contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 2rem 4rem 2rem;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem 4rem 2rem;
+  margin: 0;
 }
 .contact-box {
-    display: block;
-    background-color: #242424;
-    box-shadow: 0.4rem 0.4rem #535353;
-    border-radius: 0.15rem;
-    padding: 1rem 4rem 1.6rem 4rem;
+  display: block;
+  background-color: #242424;
+  box-shadow: 0.4rem 0.4rem #535353;
+  border-radius: 0.15rem;
+  padding: 1rem 4rem 1.6rem 4rem;
 }
 .contact-box p {
-    font-size: 1.1rem;
-    line-height: 1.8rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    color: white;
-    font-family: 'Source Code Pro', monospace;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  color: white;
+  font-family: "Source Code Pro", monospace;
 }
 .links-box img {
-    width: 1.8rem;
-    margin-top: 0.6rem;
-    margin-right: 0.5rem;
+  width: 1.8rem;
+  margin-top: 0.6rem;
+  margin-right: 0.5rem;
 }
 @media screen and (max-width: 780px) {
-    .contact-container {
-        padding: 3rem 0.5rem 3rem 0.5rem;
-    }
-    .contact-box {
-        padding: 1.2rem 2.5rem 1.5rem 2.5rem;
-    }
+  .contact-container {
+    padding: 3rem 0.5rem 3rem 0.5rem;
+  }
+  .contact-box {
+    padding: 1.2rem 2.5rem 1.5rem 2.5rem;
+  }
 }
