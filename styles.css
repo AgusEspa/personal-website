@@ -191,8 +191,8 @@ footer {
   display: grid;
   columns: 2;
   column-gap: 2rem;
-  padding: 2rem;
-  margin: 6rem 0 0 0;
+  padding: 6rem 2rem;
+  margin: 3rem 0 0 0;
 }
 .photo-box {
   grid-column: 1/2;
@@ -239,8 +239,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem;
-    margin: 4rem 0 0 0;
+    padding: 4rem 2rem;
+    margin: 3rem 0 0 0;
   }
 
   .photo-box {
