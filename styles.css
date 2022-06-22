@@ -183,18 +183,24 @@ footer {
 
 /* About Section */
 .about-container {
-  background-image: url("./resources/bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed !important;
-  background-position: center top;
-  background-size: cover !important;
   display: grid;
   columns: 2;
   column-gap: 2rem;
   padding: 6rem 2rem;
   margin: 3rem 0 0 0;
 }
-
+.background {
+  background-image: url("./resources/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
 .photo-box {
   grid-column: 1/2;
 }
