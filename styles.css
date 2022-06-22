@@ -165,7 +165,7 @@ footer {
   min-height: 100%;
   left: 0;
   right: 0;
-  padding: 0.5rem 0 0 0;
+  padding: 0;
   margin: 0;
 }
 .footer-box {
@@ -187,18 +187,11 @@ footer {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   display: grid;
   columns: 2;
   column-gap: 2rem;
   padding: 6rem 2rem;
   margin: 3rem 0 0 0;
-}
-@supports (-webkit-touch-callout: none) {
-  .about-container {
-    background: url("resources/bg-small.jpg") center top no-repeat scroll;
-    background-size: auto 100vh;
-  }
 }
 .background img {
   max-width: 100%;
@@ -246,6 +239,10 @@ footer {
 }
 @media screen and (max-width: 780px) {
   .about-container {
+    background-image: url(resources/bg-small.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -357,6 +354,10 @@ footer {
 
 /* Contact Section */
 .contact-container {
+  background-image: url(resources/bg.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -388,6 +389,7 @@ footer {
 }
 @media screen and (max-width: 780px) {
   .contact-container {
+    background-image: url(resources/bg-small.jpg);
     padding: 3rem 0.5rem 3rem 0.5rem;
   }
   .contact-box {
