@@ -184,9 +184,7 @@ footer {
 /* About Section */
 .about-container {
   background-image: url(resources/bg.jpg);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   display: grid;
   columns: 2;
   column-gap: 2rem;
@@ -239,10 +237,6 @@ footer {
 }
 @media screen and (max-width: 780px) {
   .about-container {
-    background-image: url(resources/bg-small.jpg);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -355,9 +349,7 @@ footer {
 /* Contact Section */
 .contact-container {
   background-image: url(resources/bg.jpg);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -389,7 +381,6 @@ footer {
 }
 @media screen and (max-width: 780px) {
   .contact-container {
-    background-image: url(resources/bg-small.jpg);
     padding: 3rem 0.5rem 3rem 0.5rem;
   }
   .contact-box {
