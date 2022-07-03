@@ -9,15 +9,22 @@ body {
   background-color: #141414;
 }
 
-.navbar {
+.navbarContainer {
   display: flex;
+  width: 100%;
   position: fixed;
   overflow: hidden;
   width: 100%;
   top: 0;
   left: 0;
+  padding: 0.4rem 0.5rem;
+  background-color: transparent;
+}
+.navbar {
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   margin-bottom: 3rem;
   margin: 0;
@@ -76,7 +83,6 @@ body {
   display: none;
   position: absolute;
   right: 1rem;
-  top: 1.2rem;
   margin: 0rem 1rem 0rem 0rem;
   padding: 0;
 }
