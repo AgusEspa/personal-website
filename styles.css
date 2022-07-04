@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  background-color: #141414;
+  background-color: black;
 }
 
 .navbarContainer {
@@ -49,13 +49,13 @@ body {
 
 .links-menu ul {
   display: flex;
-  margin: 0rem 4rem 0rem 0rem;
+  margin: 0rem 3rem 0rem 0rem;
   padding: 0;
+  gap: 1.2rem;
 }
 
 .links-menu li {
   list-style: none;
-  margin-left: 1rem;
 }
 
 .links-menu a {
@@ -97,7 +97,7 @@ body {
   transition: all 0.2s ease-out;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 840px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -117,7 +117,7 @@ body {
   }
   .links-menu li {
     text-align: right;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
   }
   .links-menu.active {
     display: flex;
@@ -197,6 +197,7 @@ footer {
   column-gap: 2rem;
   padding: 6rem 2rem;
   margin: 3rem 0 0 0;
+  box-shadow: inset 0px -20px 40px 15px black;
 }
 .background img {
   max-width: 100%;
@@ -335,14 +336,117 @@ footer {
   }
 }
 
+/* Skillset Section */
+.skillset-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 5rem 2rem 3rem 2rem;
+}
+
+.skillset-container h2 {
+  color: white;
+  font-weight: 1000;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Source Code Pro", monospace;
+}
+
+.skills-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+  padding: 4rem 2rem 4rem 2rem;
+  gap: 1rem;
+}
+@media screen and (max-width: 780px) {
+  .skills-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.skill-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 22%;
+}
+@media screen and (max-width: 780px) {
+  .skill-box {
+    width: 100%;
+  }
+}
+
+.skill-box p {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.5rem;
+  font-family: "Source Code Pro", monospace;
+  padding: 0.5rem;
+  margin: 0;
+  background-color: #0f0f0f;
+  border-radius: 0.3rem;
+}
+.skill-box img {
+  height: 2.2rem;
+  margin: 0 0 0.5rem 0;
+}
+@media screen and (max-width: 780px) {
+  .project-box img {
+    width: 10rem;
+  }
+}
+
 /* Projects Section */
 .projects-container {
-  background-color: #3a2642;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 5rem 2rem 3rem 2rem;
+  background-color: #0e0910;
+}
+
+.projects-container h2 {
+  color: white;
+  font-weight: 1000;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Source Code Pro", monospace;
+}
+
+.projects-box-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
   padding: 4rem 2rem 4rem 2rem;
+  gap: 9rem;
+}
+@media screen and (max-width: 780px) {
+  .projects-box-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+.project-box {
+  transition: 0.2s ease-out;
+}
+.project-box:hover {
+  transform: translateY(-10%);
 }
 .project-box img {
   width: 12rem;
