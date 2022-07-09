@@ -33,7 +33,6 @@ body {
 
 .app-title {
   margin: 0rem 0rem 0rem 3rem;
-  background-color: #3a2642;
 }
 
 .app-title h3 {
@@ -145,10 +144,10 @@ body {
 
 @keyframes blinking {
   0% {
-    background-color: #3a2642;
+    background-color: transparent;
   }
   29% {
-    background-color: #3a2642;
+    background-color: transparent;
   }
   30% {
     background-color: #b18194;
@@ -157,10 +156,10 @@ body {
     background-color: #b18194;
   }
   70% {
-    background-color: #3a2642;
+    background-color: transparent;
   }
   100% {
-    background-color: #3a2642;
+    background-color: transparent;
   }
 }
 
@@ -192,9 +191,11 @@ footer {
 .about-container {
   background-image: url(resources/bg.jpg);
   background-repeat: repeat;
-  display: grid;
-  columns: 2;
-  column-gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
   padding: 6rem 2rem;
   margin: 3rem 0 0 0;
   box-shadow: inset 0px -20px 40px 15px black;
@@ -209,11 +210,20 @@ footer {
 .photo-box img {
   width: 10rem;
   float: right;
+  box-shadow: 0 0 5px black;
+  border-radius: 50%;
 }
 .text-box {
   grid-column: 2/2;
   margin: 0;
   max-width: 34rem;
+}
+.text-box h3 {
+  font-size: 1.7rem;
+  color: white;
+  font-family: "VT323", monospace;
+  margin: 1rem 0 0 0;
+  padding: 0;
 }
 .text-box p {
   font-size: 1.05rem;
@@ -245,7 +255,6 @@ footer {
 }
 @media screen and (max-width: 780px) {
   .about-container {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 4rem 2rem;
@@ -253,8 +262,8 @@ footer {
   }
 
   .photo-box {
-    grid-column: 0;
     margin: 1rem 0 0 0;
+    align-self: center;
   }
 }
 
@@ -264,8 +273,24 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin: 0;
   padding: 4rem 2rem 4rem 2rem;
+}
+.resume-container h1 {
+  color: black;
+  font-weight: 1000;
+  font-size: 2rem;
+  margin: 1rem 0 2.5rem 0;
+  font-family: "VT323", monospace;
+}
+.experience-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
 .resume-box {
   background-color: #f7f7f7;
@@ -274,7 +299,7 @@ footer {
   border-bottom: 2px solid #dddddd;
   border-top: 0;
   border-radius: 0.3rem;
-  padding: 2.5rem 3rem 3rem 3rem;
+  padding: 2rem 2.5rem 3rem 2.5rem;
 }
 .resume-box h2 {
   color: #0e0e0e;
@@ -306,15 +331,8 @@ footer {
   margin: 0;
 }
 .resume-box ul {
-  list-style: circle;
   padding: 0 0 0 1.2rem;
   margin: 0;
-}
-.resume-box ul.skills {
-  list-style: square;
-  padding: 0 0 0 1.2rem;
-  margin: 0;
-  font-size: 1.1rem;
 }
 .resume-box li {
   padding: 0;
@@ -324,7 +342,9 @@ footer {
   .resume-container {
     padding: 3rem 0.5rem 3rem 0.5rem;
   }
-
+  .experience-container {
+    flex-direction: column;
+  }
   .resume-box {
     background-color: #f7f7f7;
     border-left: 1px solid #dddddd;
@@ -350,10 +370,9 @@ footer {
 .skillset-container h2 {
   color: white;
   font-weight: 1000;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  font-size: 2rem;
   margin: 1rem 0 0.5rem 0;
-  font-family: "Source Code Pro", monospace;
+  font-family: "VT323", monospace;
 }
 
 .skills-container {
@@ -420,10 +439,9 @@ footer {
 .projects-container h2 {
   color: white;
   font-weight: 1000;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  font-size: 2rem;
   margin: 1rem 0 0.5rem 0;
-  font-family: "Source Code Pro", monospace;
+  font-family: "VT323", monospace;
 }
 
 .projects-box-container {
