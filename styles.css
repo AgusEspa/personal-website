@@ -43,12 +43,13 @@ body {
 }
 
 .links-menu {
-  height: 100%;
+  margin: 0rem 3rem 0rem 0rem;
+  padding: 0;
 }
 
 .links-menu ul {
   display: flex;
-  margin: 0rem 3rem 0rem 0rem;
+  margin: 0;
   padding: 0;
   gap: 1.2rem;
 }
@@ -433,7 +434,7 @@ footer {
   justify-content: center;
   margin: 0;
   padding: 5rem 2rem 3rem 2rem;
-  background-color: #0e0910;
+  background-color: #1d1221;
 }
 
 .projects-container h2 {
