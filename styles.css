@@ -38,7 +38,8 @@ body {
 .app-title h3 {
   font-size: 1.8rem;
   font-family: "VT323", monospace;
-  color: #e6b3cc;
+  color: #f2f2f2;
+  text-shadow: 2px 2px #808080;
   margin: 0;
 }
 
@@ -51,7 +52,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  gap: 1.2rem;
+  gap: 1.5rem;
 }
 
 .links-menu li {
@@ -67,8 +68,7 @@ body {
 }
 
 .links-menu a:hover {
-  text-decoration: 1px solid underline;
-  text-decoration-color: #e6b3cc;
+  color: #df80ff;
 }
 
 .links-menu span {
@@ -97,7 +97,7 @@ body {
   transition: all 0.2s ease-out;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 870px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -139,28 +139,21 @@ body {
 
 /* blinking cursor */
 .blinking-cursor {
-  -webkit-animation: blinking 3s infinite;
-  animation: blinking 3s infinite;
+  animation: blinking 1.5s ease-out infinite;
 }
 
 @keyframes blinking {
   0% {
-    background-color: transparent;
+    color: #f2f2f2;
+    text-shadow: 2px 2px #808080;
   }
-  29% {
-    background-color: transparent;
-  }
-  30% {
-    background-color: #b18194;
-  }
-  69% {
-    background-color: #b18194;
-  }
-  70% {
-    background-color: transparent;
+  50% {
+    color: #808080;
+    text-shadow: 2px 2px #f2f2f2;
   }
   100% {
-    background-color: transparent;
+    color: #f2f2f2;
+    text-shadow: 2px 2px #808080;
   }
 }
 
@@ -489,9 +482,16 @@ footer {
 .contact-box {
   display: block;
   background-color: #242424;
-  box-shadow: 0.4rem 0.4rem #535353;
+  box-shadow: 0.4rem 0.4rem #b3b3b3;
   border-radius: 0.15rem;
   padding: 1rem 4rem 1.6rem 4rem;
+}
+.contact-box h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin: 1rem 0 0.5rem 0;
+  font-family: "VT323", monospace;
 }
 .contact-box p {
   font-size: 1.1rem;
