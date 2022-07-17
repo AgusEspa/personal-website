@@ -185,13 +185,13 @@ footer {
 }
 
 .separator {
-  height: 8rem;
+  height: 5rem;
   margin: 0;
   padding: 0;
 }
 @media screen and (max-width: 870px) {
   .separator {
-    height: 3rem;
+    height: 2rem;
     margin: 0;
     padding: 0;
   }
@@ -204,6 +204,12 @@ footer {
 }
 .black {
   background-color: black;
+}
+.black-to-violet {
+  background-image: linear-gradient(black, #1d1221);
+}
+.violet-to-white {
+  background-image: linear-gradient(#1d1221, #ececec);
 }
 
 /* About Section */
