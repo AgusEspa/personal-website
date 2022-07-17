@@ -321,6 +321,34 @@ footer {
   margin: 1rem 0 2.5rem 0;
   font-family: "VT323", monospace;
 }
+.resume-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 10rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: lightgrey;
+  margin: 0 0 2rem 0;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+.resume-button:hover {
+  transform: translateY(-10%);
+}
+.resume-button p {
+  font-family: "Source Code Pro", monospace;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 0.5rem 0 0;
+  padding: 0;
+}
+.resume-button img {
+  width: 1.3rem;
+}
 .experience-container {
   margin: 0;
   padding: 0;
@@ -337,6 +365,7 @@ footer {
   border-top: 0;
   border-radius: 0.3rem;
   padding: 2rem 2.5rem 3rem 2.5rem;
+  width: 50%;
 }
 .resume-box h2 {
   color: #0e0e0e;
@@ -390,6 +419,7 @@ footer {
     border-top: 0;
     border-radius: 0.3rem;
     padding: 1rem 1rem 2rem 1rem;
+    width: auto;
   }
 }
 
