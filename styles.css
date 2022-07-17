@@ -252,6 +252,18 @@ footer {
   color: white;
   font-family: "Source Code Pro", monospace;
 }
+.text-box ul {
+  padding: 0 0 0 1.2rem;
+  margin: 0;
+}
+.text-box li {
+  font-size: 1.05rem;
+  line-height: 1.6rem;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
 .links-box img {
   width: 1.8rem;
   margin-top: 0.3rem;
