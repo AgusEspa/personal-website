@@ -17,7 +17,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.3, rootMargin: "30px" }
+  { threshold: 0.35, rootMargin: "30px" }
 );
 
 sections.forEach((section) => {
