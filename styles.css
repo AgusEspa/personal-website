@@ -548,7 +548,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6rem 2rem 6rem 2rem;
+  padding: 8rem 2rem 7rem 2rem;
   margin: 0;
 }
 .contact-box {
@@ -583,7 +583,7 @@ footer {
 }
 @media screen and (max-width: 780px) {
   .contact-container {
-    padding: 4rem 0.5rem 4rem 0.5rem;
+    padding: 6rem 0.5rem 5rem 0.5rem;
   }
   .contact-box {
     padding: 1.2rem 2.5rem 1.5rem 2.5rem;
